@@ -1,3 +1,6 @@
+
+//There are three on board sensors hall effect, touch and tempureture sensor 
+
 #include "Arduino.h" 
 
 #include <WiFi.h> 
@@ -57,7 +60,8 @@ void loop()
     Serial.print("Touch: ");
     Serial.println(touchRead(touch));
     delay(1000);
-
+ 
+    //Tempureture sensor
     Serial.print("Temperature: ");
   
     Serial.print((temprature_sens_read() - 32) / 1.8);
